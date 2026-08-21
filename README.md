@@ -8,6 +8,8 @@
 
 </div>
 
+<!-- Draft-only marker for validating contributor permissions and CI. -->
+
 > **Public Preview** — TensorRT-Model-Connect is evolving rapidly and is
 > intended for evaluation and feedback. APIs, scope, and direction may change.
 > See [Project status](#project-status).
