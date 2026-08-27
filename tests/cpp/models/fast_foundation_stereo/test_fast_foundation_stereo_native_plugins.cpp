@@ -370,6 +370,9 @@ int main() {
             return 0;
         test_full_volume_enqueue_zeros_padded_lanes();
         test_post8_enqueue_zeros_padded_lanes();
+        // Temporary GPU-only probe for PR #1056. Remove after validating external log propagation.
+        require(false, "INTENTIONAL_INTERNAL_CI_GPU_LOG_PROBE: verifying GPU failure logs are "
+                       "visible to external PR authors");
     } catch (const std::exception& error) {
         std::cerr << "FAIL: " << error.what() << '\n';
         return 1;
