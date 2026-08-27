@@ -7,4 +7,5 @@ runtime_plugins = ["plugin.cpp|register_fast_foundation_stereo_plugin"]
 runtime_strategies = ["fast_foundation_stereo_disparity"]
 runtime_tests = [
   "test_fast_foundation_stereo_preprocess|test_fast_foundation_stereo_preprocess.cpp|trtmc_model_fast_foundation_stereo|_|_",
+  "test_fast_foundation_stereo_native_plugins|test_fast_foundation_stereo_native_plugins.cpp|_|native_plugins/full_volume_leaky_plugin.cu,native_plugins/post8_sum_plugin.cu|REQUIRES_TRT,REQUIRES_GPU",
 ]
